@@ -4,7 +4,7 @@ server:
 spring:
   datasource:
     username: postgres
-    password:
+    password: Zabava532600
     url: jdbc:postgresql://localhost:5432/employee_base?useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
   jpa:
     properties:
@@ -13,3 +13,12 @@ spring:
     hibernate:
       ddl-auto: create
     show-sql: true
+
+security-settings:
+  users:
+    - login: admin
+      password: admin
+    - login: user1
+      password: user1
+    - login: user2
+      password: user2
